@@ -5,9 +5,9 @@ import App from './App.vue';
 import { registerPlugins } from '@/plugins';
 
 async function enableMocking() {
-  if (import.meta.env.MODE !== 'development') {
-    return;
-  }
+  // if (import.meta.env.MODE !== 'development') {
+  //   return;
+  // }
 
   const { worker } = await import('./mocks/browser');
 
